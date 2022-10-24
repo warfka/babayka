@@ -12,7 +12,7 @@ public class AudioTrigger : MonoBehaviour
             {
                 isTriggered = true;
                 playsound.Play();
-            StartCoroutine(PreventSoundToStack());
+                StartCoroutine(PreventSoundToStack());
             }
     }
     IEnumerator PreventSoundToStack()
