@@ -17,7 +17,7 @@ public class AudioTrigger : MonoBehaviour
     }
     IEnumerator PreventSoundToStack()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(playsound.clip.length + 1f);
         isTriggered = false;
     }
 }
